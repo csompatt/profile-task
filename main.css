@@ -1,0 +1,163 @@
+body{
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  display: block;
+}
+
+/*First part*/
+#profile{
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+#info-picture{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.info-contact{
+  width: 60%;
+  display: block;
+  text-align: center;
+  
+}
+
+.contact{
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
+  display: inline-block;
+}
+
+.picture{
+  width: 120px;
+  height: 120px;
+  background: url("assets/profilepic.JPG");
+  background-size: cover;
+  margin: 1%;
+
+}
+
+.info{
+  width: 100%;
+}
+h1, h3{
+  font-size: 1.5rem;
+}
+
+h3{
+  margin-bottom: 10%;
+}
+
+.job{
+  font-size: .8rem;
+}
+.coding-lang{
+  font-size: .6rem;
+  text-align: right;
+}
+
+.contact{
+  font-size: 1rem;
+}
+
+i{
+  font-size: 2rem;
+}
+
+/*Second Part*/
+
+.line{
+  content:"";
+  background: -webkit-linear-gradient(bottom, grey, white 100%);
+  display: block;
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+}
+
+#bio{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: grey;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.about, .goals, .hobby{
+  width: 30%;
+  font-size: 1rem;
+  display: inline;
+  line-height: 1.3rem;
+}
+#skills, .about{ 
+  margin-left: 1%;
+   }
+  .about{
+  padding-right: 2%;
+  border-right: 3px dotted white;
+}
+.hobby{
+  margin-right: 1%;
+  padding-left: 2%;
+  border-left: 3px dotted white;
+}
+.fas{
+  font-size: 1.5rem;
+}
+
+#skills{
+  display: inline-block;
+  width: 100%;
+  margin-top: 5%;
+  background-color: white;
+}
+.myskills{
+  display: inline-flex;
+  width: 100%;
+  /*justify-content: space-between;*/
+  text-align: center;
+  justify-content: center;
+  line-height: 2rem;
+}
+
+.html, .css, .javascript{
+  margin: 2% auto;
+}
+
+.fa-stack{
+  font-size: 2rem;
+}
+
+.lang{
+  float: right;
+  margin-top: 5%;
+  width: 100%;
+  border-top: 1px solid black;
+  
+}
+ul{
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.lang-link{
+  padding-right: 5px;
+  margin-top: 5px;
+}
+
+a{
+  color: black;
+}
