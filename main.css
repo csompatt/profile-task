@@ -2,15 +2,23 @@ body{
   width: 100%;
   height: 100vh;
   font-size: 16px;
-  display: block;
 }
 
+#profile, .contact, .info, #bio, #skills, .myskills, .lang{ 
+width: 100%;
+ }
+
+ body, #profile, .info-contact, .contact, {
+   display: block;
+ }
+
+ .info-contact, .contact, .myskills{ 
+ text-align: center;
+ }
 /*First part*/
 #profile{
-  background-color: white;
-  width: 100%;
   margin: 0 auto;
-  display: block;
+  position: relative;
 }
 
 #info-picture{ 
@@ -19,40 +27,40 @@ body{
   justify-content: center;
   padding-bottom: 3%;
   padding-top: 3%;
+  background-color: #DCDCDC;
 }
 
 .info-contact{
   width: 60%;
-  display: block;
-  text-align: center;
   
 }
 
 .contact{
-  width: 100%;
+  height: 50%;
   margin-top: 10%;
-  text-align: center;
-  display: inline-block;
 }
 
 .picture{
-  width: 120px;
-  height: 120px;
+  display: block;
+  width: 150px;
+  height: 150px;
   background: url("assets/profilepic.JPG");
   background-size: cover;
   margin: 1%;
-
+  box-shadow: 0 0 5px 5px #DCDCDC inset;
 }
 
 .info{
-  width: 100%;
+  height: 50%;
 }
-h1, h3{
+h1{
   font-size: 1.5rem;
 }
 
 h3{
   margin-bottom: 10%;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .job{
@@ -74,22 +82,17 @@ i{
 /*Second Part*/
 
 .line{
-  content:"";
-  background: -webkit-linear-gradient(bottom, grey, white 100%);
   display: block;
-  height: 5%;
-  width: 100%;
   position: absolute;
-  padding-bottom: 0;
-  margin-bottom: 0;
-
+  width: 100%;
+  height: 5%;
+  background: linear-gradient(#DCDCDC, white);
 }
 
 #bio{
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  background-color: grey;
+  background-color: white;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -104,31 +107,41 @@ i{
   margin-left: 1%;
    }
   .about{
-  padding-right: 2%;
-  border-right: 3px dotted white;
+  padding-right: 1%;
+  border-right: 3px dotted black;
 }
 .hobby{
-  margin-right: 1%;
+  margin-right: .5%;
   padding-left: 2%;
-  border-left: 3px dotted white;
+  border-left: 3px dotted black;
 }
 .fas{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin-right: .5rem;
 }
 
-#skills{
-  display: inline-block;
+.reverse-line{
+  display: block;
+  position: absolute;
   width: 100%;
-  margin-top: 5%;
-  background-color: white;
+  height: 5%;
+  background: linear-gradient(white, #DCDCDC);
+}
+#skills{
+  margin-top: 2%;
+  background-color: #DCDCDC;
+  margin-left: 0;
 }
 .myskills{
   display: inline-flex;
-  width: 100%;
   /*justify-content: space-between;*/
-  text-align: center;
   justify-content: center;
   line-height: 2rem;
+}
+
+.h1skills{
+  margin-left: 1%;
+  padding-top: 1%;
 }
 
 .html, .css, .javascript{
@@ -140,15 +153,12 @@ i{
 }
 
 .lang{
-  float: right;
-  margin-top: 5%;
-  width: 100%;
   border-top: 1px solid black;
+  background-color: #DCDCDC;
   
 }
 ul{
   display: inline-flex;
-  justify-content: space-between;
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -160,4 +170,53 @@ ul{
 
 a{
   color: black;
+}
+
+.about-head, .goals-head, .hobby-head{
+  display: inline-flex;
+  align-content: center;
+}
+
+.quotes{
+  display: flex;
+  justify-content: center;
+  align-content: flex;
+  margin-top: 2%;
+  padding-top: 3%;
+}
+
+h4{
+  font-size: 1.3rem;
+}
+
+
+/*Mobile display*/
+@media (max-width: 420px){
+  #bio{
+    display: block;
+    width: 90%;
+    padding-left: 2%;
+  }
+
+  .h1skills, .quotes{
+    padding-top: 5%;
+  }
+
+  
+
+  .reverse-line ,.line{
+    height: 2%;
+  }
+.about, .goals, .hobby{
+  border: none;
+}
+.about-head, .goals-head, .hobby-head{
+  width: 100%;
+  border-top: 3px dotted black;
+  margin-top: 10%;
+  padding-top: 3%;
+}
+h3{
+  margin-bottom: 1%;
+}
 }
